@@ -1,16 +1,16 @@
 body {
-    color: rgb(0, 0, 0);
+    color: rgb(75, 11, 11);
     background-color: rgb(230, 218, 193);
 }
 
-.menu-style {
-    color: rgb(126, 230, 242);
-    background-color: rgb(230, 218, 193);
-}
+a:link { color: rgb(75, 11, 11); }
+a:visited { color: rgb(75, 11, 11); }
+a:hover{ color: rgb(119, 19, 19); }
 
-.padding {
-    padding: 12px;
-}
-.title-bar {
+.header {
+    color: rgb(75, 11, 11);
     background-color: rgb(255, 255, 255);
+    font-style: normal;
 }
+
+.page { background-color: rgb(236, 230, 215); }

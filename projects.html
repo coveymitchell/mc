@@ -5,11 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Projects</title>
 	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="off-canvas-wrapper">
      <!-- Your menu or Off-canvas content goes here -->
-     <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+     <div class="off-canvas position-right header" id="offCanvas" data-off-canvas>
         <!-- Close button -->
         <button class="close-button" aria-label="Close menu" type="button" data-close>
             <span aria-hidden="true">&times;</span>
@@ -25,12 +26,56 @@
     </div>
     <!-- Your page content lives here -->
     <div class="off-canvas-content" data-off-canvas-content>
-        <!-- main content within a `grid-container` -->
-        <div class="grid-container">
-            <div class="grid-x grid-padding-x">
-                <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
+        <!-- Header for website -->
+        <div class = "title-bar header">
+            <div class = "title-bar-left">
+               <span class = "title-bar-title">Mitchell Covey | mdcovey@stthomas.edu</span>
+            </div>
+   
+            <div class = "title-bar-right">
+                <button class="menu-icon dark hide-for-medium" type="button" data-open="offCanvas"></button>
+                    <span class="title-bar-right hide-for-small-only">
+                        <a href="/index.html">Home</a>
+                        <a href="/projects.html">Projects</a>
+                        <a href="/resume.html">Resume</a>
+                        <a href="/fun.html">Fun</a>
+                    </span>
             </div>
         </div>
+
+        <!-- Page Content -->
+        <div class="grid-container">
+            <div class="grid-x grid-padding-y grid-padding-x grid-margin-x page">
+                <div class="cell large-3 small-12"><img src="/images/projects-pc.jpg" alt="pc"></div> 
+                <div class="cell large-9 small-12">
+                    <h1>Desktop Computer</h1>
+                    <p> I first put my desktop computer together back in 2016 to replace a broken laptop. I purchased and put all the parts together by myself, by following youtube tutorials.
+                        I rebuilt the desktop in early 2022 to update some older hardware. The current build has a AMD Ryzen 5 5600X 6-Core Processor, 16 gb of ram, and a Nvidia GeForce RTX 2070 gpu. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid-x grid-padding-y grid-padding-x grid-margin-x">
+                <div class="cell large-3 small-12"><img src="/images/projects-led.jpg" alt="led"></div> 
+                <div class="cell large-9 small-12">
+                    <h1>LED lights syncing to music</h1>
+                    <p> My freshman year I took engr 101 and in that class we built a circuit board to make any lights flash to music. We wired up different components and sodered everything to the board ourselves.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid-x grid-padding-y grid-padding-x grid-margin-x page">
+                <div class="cell large-3 small-12"><img src="/images/projects-histsnif.png" alt="history sniffer"></div> 
+                <div class="cell large-9 small-12">
+                    <h1>History sniffing website</h1>
+                    <p> Our last homework assignment for CISC 350: Information Security was to build a website to sniff out a users history on the <a href="https://www.stthomas.edu/academics/undergraduate/" target="_blank" style="font-style: italic;">St Thomas Majors</a> website.
+                        If the user had ever visited one of the major pages, the "CAPTCHA" would change. Based on their answers to the questions, the website would recommend looking at different majors. 
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </div>
 

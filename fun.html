@@ -5,34 +5,50 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Fun stuff</title>
 	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="off-canvas-wrapper">
-     <!-- Your menu or Off-canvas content goes here -->
-     <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-        <!-- Close button -->
-        <button class="close-button" aria-label="Close menu" type="button" data-close>
-            <span aria-hidden="true">&times;</span>
-        </button>
-
-        <!-- Menu -->
-        <ul class="vertical menu">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/resume.html">Resume</a></li>
-            <li><a href="/fun.html">Fun</a></li>
-        </ul>
-    </div>
-    <!-- Your page content lives here -->
-    <div class="off-canvas-content" data-off-canvas-content>
-        <!-- main content within a `grid-container` -->
-        <div class="grid-container">
-            <div class="grid-x grid-padding-x">
-                <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
-            </div>
-        </div>
-    </div>
-</div>
+    <div class="off-canvas-wrapper">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-right header" id="offCanvas" data-off-canvas>
+           <!-- Close button -->
+           <button class="close-button" aria-label="Close menu" type="button" data-close>
+               <span aria-hidden="true">&times;</span>
+           </button>
+   
+           <!-- Menu -->
+           <ul class="vertical menu">
+               <li><a href="/index.html">Home</a></li>
+               <li><a href="/projects.html">Projects</a></li>
+               <li><a href="/resume.html">Resume</a></li>
+               <li><a href="/fun.html">Fun</a></li>
+           </ul>
+       </div>
+       <!-- Your page content lives here -->
+       <div class="off-canvas-content" data-off-canvas-content>
+           <!-- Header for website -->
+           <div class = "title-bar header">
+               <div class = "title-bar-left">
+                  <span class = "title-bar-title">Mitchell Covey | mdcovey@stthomas.edu</span>
+               </div>
+      
+               <div class = "title-bar-right">
+                   <button class="menu-icon dark hide-for-medium" type="button" data-open="offCanvas"></button>
+                       <span class="title-bar-right hide-for-small-only">
+                           <a href="/index.html">Home</a>
+                           <a href="/projects.html">Projects</a>
+                           <a href="/resume.html">Resume</a>
+                           <a href="/fun.html">Fun</a>
+                       </span>
+               </div>
+           </div>
+   
+           <!-- Page Content -->
+           <div class="grid-container">
+               
+           </div>
+       </div>
+   </div>
 
     <!-- include before closing <body> tag -->
         <script src="js/vendor.js"></script>

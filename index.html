@@ -10,7 +10,7 @@
 <body>
     <div class="off-canvas-wrapper">
         <!-- Your menu or Off-canvas content goes here -->
-        <div class="off-canvas position-right menu-style" id="offCanvas" data-off-canvas>
+        <div class="off-canvas position-right header" id="offCanvas" data-off-canvas>
             <!-- Close button -->
             <button class="close-button" aria-label="Close menu" type="button" data-close>
                 <span aria-hidden="true">&times;</span>
@@ -26,39 +26,34 @@
         </div>
         <!-- Your page content lives here -->
         <div class="off-canvas-content" data-off-canvas-content>
-            <!-- main content within a `grid-container` -->
-            <div class="grid-container">
-                <!-- Title bar for small screens -->
-                <div class="title-bar hide-for-medium grid-padding-x">
-                    <div class="title-bar-left">
-                        <span class="title-bar-title">Mitchell Covey's Website</span>
-                    </div>
-                    <div class="title-bar-right">
-                        <button class="menu-icon" type="button" data-open="offCanvas"></button>
-                    </div>
+            <!-- Header for website -->
+            <div class = "title-bar header">
+                <div class = "title-bar-left">
+                    <span class = "title-bar-title">Mitchell Covey | mdcovey@stthomas.edu</span>
                 </div>
 
-                <!-- Title bar for medium screens and up -->
-                <div class="title-bar hide-for-small-only grid-padding-x">
-                    <div class="title-bar-left">
-                        <span class="title-bar-title">Mitchell Covey's Website</span>
-                    </div>
-                    <div class="title-bar-right">
-                        <span class="title-bar-right padding">
+                <div class = "title-bar-right">
+                    <button class="menu-icon dark hide-for-medium" type="button" data-open="offCanvas"></button>
+                        <span class="title-bar-right hide-for-small-only">
                             <a href="/index.html">Home</a>
                             <a href="/projects.html">Projects</a>
                             <a href="/resume.html">Resume</a>
                             <a href="/fun.html">Fun</a>
                         </span>
-                    </div>
-                </div>
-                
-                <!-- canvas content -->
-                <div class="grid-x grid-padding-x">
-                    <div class="cell small-12 large-6">hello</div>
-                    <div class="cell small-12 large-6">goodbye</div>
                 </div>
             </div>
+            <!-- Page content -->
+            <div class="grid-container">
+                <div class="grid-x grid-padding-y grid-padding-x grid-margin-x page">
+                    <div class="cell large-4 small-6"><img src="/images/home-headshot.jpg" alt="headshot"></div>
+                    <div class="cell large-8 small-6">
+                        <h1>About me</h1>
+                        <p>My name is Mitchell Covey. I am a senior at the <a href="https://www.stthomas.edu/" target="_blank" style="font-style: italic;">University of St. Thomas</a> studying computer science. I really enjoy
+                        diving into code and learning how computer systems interact with each other. After college I plan to start working in either software development or information security </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
