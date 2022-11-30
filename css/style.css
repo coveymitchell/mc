@@ -1,6 +1,6 @@
 body {
-    color: rgb(75, 11, 11);
-    background-color: rgb(230, 218, 193);
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 35, 32);
 }
 
 a:link { color: rgb(75, 11, 11); }
@@ -9,8 +9,8 @@ a:hover{ color: rgb(119, 19, 19); }
 
 .header {
     color: rgb(75, 11, 11);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(47, 44, 44);
     font-style: normal;
 }
 
-.page { background-color: rgb(236, 230, 215); }
+.page { background-color: rgb(41, 40, 37); }
